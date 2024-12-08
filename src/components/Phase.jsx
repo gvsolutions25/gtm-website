@@ -19,7 +19,7 @@ const Phase = () => {
             {/* <ParallaxCard enableRotate> */}
             {phase.map((phase) => (
               <div className="rounded-xl p-6 flex flex-col gap-2 hover:hovertext bg-neutral-950 border  border-neutral-600 phase-item">
-                <span className="text-orange-400">{phase.icon}</span>
+                <span className="text-custom-300">{phase.icon}</span>
                 <p className="inline-block text-2xl">{phase.title}</p>
                 <p className="text-neutral-400">{phase.description}</p>
               </div>

@@ -3,7 +3,7 @@
 }
 
 .section-tag {
-    @apply text-orange-400 px-4 py-1 rounded-full border w-fit border-orange-400;
+    @apply text-custom-300 px-4 py-1 rounded-full border w-fit border-custom-300;
 }
 
 .section-title {

@@ -5,7 +5,7 @@ import CTA from "./CTA";
 
 const Services = () => {
   return (
-    <div className="p-4 container mx-auto w-full flex flex-col mt-8 lg:mt-0 gap-6">
+    <div id="services" className="p-4 container mx-auto w-full flex flex-col mt-8 lg:mt-0 gap-6">
       <p className="section-tag">Services</p>
       <div>
         <p className="section-title">Discover Our Set of Services</p>
@@ -20,7 +20,7 @@ const Services = () => {
           <a href="">
             <div className="lg:p-12 p-4 border flex flex-col gap-3 lg:gap-6 border-neutral-600 bg-neutral-950 rounded-xl lg:rounded-3xl service-card-active cursor-pointer">
               <div className="flex gap-4">
-                <i className="text-orange-400">{service.icon}</i>
+                <i className="text-custom-300">{service.icon}</i>
                 <p className="text-2xl">{service.title}</p>
               </div>
               <div>

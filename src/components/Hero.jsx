@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="lg:max-w-[800px] w-screen  mt-[-125px] p-8 lg:mt-[-200px]">
         <p className="text-5xl lg:text-6xl text-center my-8">
           Elevate your brand with <br />
-          <span className="text-orange-500 lg:inline-flex inline-block">
+          <span className="text-custom-300 lg:inline-flex inline-block">
             <Typewriter
               words={[
                 " Design",
