@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/assets/styles.css">
+  <!-- <link rel="stylesheet" href="./src/assets/hover-min.css"> -->
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    const customCursor = document.querySelector('.custom-cursor');
+    let cursorX = 0;
+    let cursorY = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+
+    // Update mouse position
+    document.addEventListener('mousemove', (event) => {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+    });
+
+    // Animation loop for smooth movement
+    function animateCursor() {
+      // Interpolation: Slowly approach the target position
+      cursorX += (mouseX - cursorX) * 0.1;
+      cursorY += (mouseY - cursorY) * 0.1;
+
+      // Update cursor position
+      customCursor.style.top = `${cursorY}px`;
+      customCursor.style.left = `${cursorX}px`;
+
+      requestAnimationFrame(animateCursor); // Loop animation
+    }
+
+    animateCursor();
+
+
+  </script>
+
+</body>
+
+</html>
