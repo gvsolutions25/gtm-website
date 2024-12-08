@@ -116,8 +116,13 @@ body {
     @apply hover:text-white;
 }
 
-.feature-card{
+.feature-card {
     transition: all 0.3ms;
+}
+
+.nav-item.active {
+    color: #ffa500 ;
+    /* border-bottom: 2px solid custom-300; */
 }
 
 .feature-card::before {
@@ -133,11 +138,11 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.feature-card:hover{
+.feature-card:hover {
     @apply text-black
 }
 
-.feature-card:hover::before{
+.feature-card:hover::before {
 
     width: 100%;
 }
@@ -146,6 +151,6 @@ body {
     @apply mb-2
 }
 
-body{
+body {
     scroll-behavior: smooth !important;
 }
