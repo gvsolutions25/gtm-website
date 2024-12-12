@@ -26,9 +26,9 @@ const Contact = () => {
             <Mail />
             <p>Email Address</p>
           </div>
-          <p className="text-lg">example@gmail.com</p>
+          <p className="text-lg">contact@gvtechmedia.com</p>
         </div>
-        <div className=" flex flex-col text-neutral-200">
+        {/* <div className=" flex flex-col text-neutral-200">
           <div className="text-neutral-400 text-lg flex gap-4">
             <MapPin />
             <p>Location</p>
@@ -36,7 +36,7 @@ const Contact = () => {
           <p className="text-lg">
             Jagadamba, Visakhapatnam, Andhra Pradesh - 530001
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="w-full lg:w-1/2 lg:px-12">
         <form className="p-4 grid-cols-2 grid gap-4 rounded-lg border border-neutral-600">
